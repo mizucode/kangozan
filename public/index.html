@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body style="background-color: #f7e1a6">
+    <!-- Navbar -->
+    <nav class="bg-navi fixed top-0 left-0 right-0 z-10">
+      <div class="container mx-auto flex justify-between items-center py-4">
+        <div>
+          <h1 class="text-white font-bold text-xl ml-5">Website Sudokucan</h1>
+        </div>
+        <div class="hidden md:flex space-x-8 text-lg font-semibold">
+          <a href="#home" class="text-white hover:text-yellow">Home</a>
+          <a href="#about" class="text-white hover:text-yellow">About</a>
+          <a href="#contact" class="text-white hover:text-yellow">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Hero section -->
+    <section id="home" class="hero grid grid-cols-1 md:grid-cols-2 justify-center p-5">
+      <section class="hero flex flex-row justify-center p-5">
+        <div class="bg-no-repeat mt-5">
+          <img src="./img/hero.png" alt="img hero" />
+        </div>
+      </section>
+      <div class="container mx-auto flex flex-col items-center md:mt-32">
+        <h1 class="text-5xl md:text-6xl font-bold text-navi text-center mb-3 md:mb-0">RS Computer</h1>
+        <p class="text-lg text-gray-900 text-wrap text-center mb-4 md:mb-0 md:p-5">Berikan kehidupan baru pada perangkat Anda. Dengan layanan servis profesional kami, komputer Anda akan kembali optimal.</p>
+        <button class="bg-orange-600 hover:bg-teal text-white font-semibold py-2 px-3 rounded">Lihat Sekarang</button>
+      </div>
+    </section>
+    <!-- Hero section -->
+
+    <!-- SVG wave 1 -->
+    <div>
+      <img src="./img/svg/wave1.svg" alt="wave 1" />
+    </div>
+    <!-- SVG wave 1 -->
+
+    <!-- About -->
+    <div id="about" class="bg-navi md:-mt-12">
+      <div class="container mx-auto py-10">
+        <h1 class="text-4xl font-bold text-center mb-8 md:mb-11 text-yellow">Tentang Kami</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
+          <div class="text-center md:text-left">
+            <img src="./img/svg/about.svg" alt="about foto" class="mx-auto" />
+          </div>
+          <div class="mx-5 text-justify -m-5 md:mt-11">
+            <p>
+              "Kepuasan pelanggan adalah prioritas utama kami di RS Computer. Kami berkomitmen untuk memberikan layanan terbaik dengan harga yang kompetitif. Dengan produk berkualitas, layanan purna jual yang memuaskan, dan dukungan teknis
+              yang responsif, kami berusaha untuk membangun hubungan jangka panjang dengan setiap pelanggan."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+
+    <!-- Wave 2 -->
+    <div>
+      <img src="./img/svg/wave2.svg" alt="wave 2" />
+    </div>
+    <!-- Wave 2 -->
+
+    <!-- Contact -->
+    <section id="contact" class="text-center md:-m-16">
+      <h1 class="text-4xl text-navi font-bold mb-3">Contact Us</h1>
+      <p class="text-gray-900 text-lg mb-5 font-semibold">Silahkan hubungi kami melalui dibawah!</p>
+      <div class="flex flex-col md:space-x-4 items-center">
+        <div class="flex flex-col">
+          <!-- Input email -->
+          <label for="email" class="text-lg font-medium text-gray-900">Email</label>
+          <input type="email" id="email" class="mt-1 px-2 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus-ring-blue-500 w-80 md:w-[500px]" placeholder="Enter a valid email address" />
+          <!-- Input email -->
+
+          <!-- Input nama-->
+          <label for="name" class="text-lg font-medium text-gray-9">Nama</label>
+          <input type="text" id="name" class="mt-1 px-2 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus-ring-blue-500 w-80 md:w-[500px]" placeholder="Enter your Name" />
+          <!-- Input nama-->
+        </div>
+      </div>
+      <button class="mt-4 bg-teal hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full w-52 md:w-[370px]">Submit</button>
+    </section>
+    <!-- Contact -->
+
+    <!-- Wave 3 -->
+    <div>
+      <img src="./img/svg/wave3.svg" alt="Wave 3" />
+    </div>
+    <!-- Wave 3 -->
+  </body>
+</html>
